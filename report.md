@@ -45,6 +45,41 @@ To be noticed that:
 
 **Solution**: Following the same approach as with Bjoern, Morty's security question was "What is his favorite pet’s name?". Solving this required knowledge of the "Rick and Morty" series to identify the answer as Snowball. However, since the answer was obfuscated, I used Burp's Intruder tool for character substitution to test all possible letter and number combinations. This process eventually allowed me to correctly answer the security question and resetting the password.
 
+### Unsigned JWT
+
+**Description**: Forge an essentially unsigned JWT token that impersonates the (non-existing) user jwtn3d@juice-sh.op.
+
+**Solution**: To forge the JWT token, start by obtaining a valid one. Log in with any account and perform an action like viewing the cart. Using Burp, analyze the request to find the Authorization token. Decode it using an online JWT decoder. Change the "alg" field to "none" (since it's unsigned) and the "email" field to the email specified in the challenge. Re-encode the token, then replace the original Authorization token with the new one in your logged-in session.
+
+## Tools Used
+
+### Burp
+
+Burp Suite is a comprehensive toolset used for web application security testing. It includes features like a proxy server to intercept and modify HTTP requests, a scanner to identify vulnerabilities, and various utilities for web application analysis and penetration testing. Burp Suite is widely used by security professionals to perform tasks such as finding security flaws, exploiting vulnerabilities, and conducting penetration tests on web applications. I used it in the whole experiment to analyze and manipulate the traffic.
+
+### StackOverflow
+
+Stack Overflow is a popular online community and Q&A platform for programmers. It allows users to ask and answer questions related to coding, software development, and other technical topics. Users can vote on questions and answers, which helps highlight the most useful responses. Stack Overflow is part of the Stack Exchange network, which hosts a variety of Q&A sites on diverse subjects. It is widely used by developers to seek help, share knowledge, and collaborate on programming issues. I used it to get the leaked password for one of the challenges.
+
+### jwt.io
+
+JWT.io is an online tool for decoding, verifying, and generating JSON Web Tokens (JWT). It allows users to paste a JWT and view its header, payload, and signature. The site provides libraries for various programming languages to help integrate JWT authentication into applications. JWT.io is widely used by developers to troubleshoot and understand JWTs, ensuring secure token-based authentication in their projects. Used it to decode the token for the Unsigned JWT challenges.
+
+### Base64.Guru
+
+Base64.Guru is an online resource and tool that provides comprehensive information and utilities for encoding and decoding Base64, including its URL-safe variant Base64Url. It offers explanations, examples, and interactive tools to encode or decode Base64 strings, helping users understand and work with Base64 in various applications such as data transmission, cryptography, and web development. I used it to encode the token in the unsigned JWT token.
+
+### QuickTime Player
+
+QuickTime Player is a multimedia application developed by Apple Inc. It allows users to play, record, edit, and share audio and video files. The player supports a wide range of media formats, including MOV, MP4, and MP3. It is available for macOS and was previously available for Windows. QuickTime Player also provides features like screen recording and simple video editing capabilities, making it a versatile tool for handling multimedia content. I used it to screen record the whole experiment.
+
+### iMovie
+
+iMovie is a video editing software application developed by Apple Inc. for macOS and iOS devices. It provides an easy-to-use interface for creating and editing videos, allowing users to import video clips, photos, and audio, apply transitions, effects, and titles, and export finished movies in various formats. iMovie supports 4K video resolution, green screen effects, and has a variety of templates and themes for quick video creation. It is suitable for both beginners and more experienced users looking for a simple yet powerful video editing tool. Used it for the demo editing.
+
+### Tutorial
+
+[https://www.youtube.com/watch?v=y12QNP2pWN0](https://www.youtube.com/watch?v=y12QNP2pWN0). Used this tutorial as a guide for the technical part.
 
 
 
