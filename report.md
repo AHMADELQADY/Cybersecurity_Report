@@ -27,5 +27,24 @@ To be noticed that:
 
 **Solution**: To retrieve the missing language on the platform, analyze and compare the available languages with those found online. By using Burp to observe how the language is specified in the request, then inject the code for the missing language into a request. This method allows you to identify and retrieve the unsupported language by understanding and modifying the request structure.
 
+### Leaked Access Logs
+
+**Description**: Dumpster over the Internet for a leaked password and log in to the original user account it belongs to. (Creating a new account with the same password does not qualify as a solution.)
+
+**Solution**: By finding the leaked password online and decoding it with Burp's decoder, you can then test this password against each email address obtained from the admin page (accessible via SQL injection). This method helps you identify the specific email account associated with the password, enabling a successful login.
+
+### Reset Bjoern’s Password
+
+**Description**: Reset the password of Bjeorn’s internal account via Forget Password mechanism with the original answer to the security question.
+
+**Solution**: To obtain Bjorn’s email, first access the admin page as done previously with Bender. Then go to the 'forgot password' section. His security question was displayed in plain text, making it easy to find the answer online. Using this information, you can reset his password.
+
+### Reset Morty’s Password
+
+**Description**: Reset the password of Bjeorn’s internal account via Forget Password mechanism with his obfuscated answer to the question.
+
+**Solution**: Following the same approach as with Bjoern, Morty's security question was "What is his favorite pet’s name?". Solving this required knowledge of the "Rick and Morty" series to identify the answer as Snowball. However, since the answer was obfuscated, I used Burp's Intruder tool for character substitution to test all possible letter and number combinations. This process eventually allowed me to correctly answer the security question and resetting the password.
+
+
 
 
