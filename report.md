@@ -21,5 +21,11 @@ To be noticed that:
 
 **Solution**: To solve this challenge, I first identified the target’s email by analyzing the reviews. Using SQL injection, I was able to log in. Then by inspecting the password change request with Burp, I removed the "current password" field and forwarded the request. Due to OWASP's vulnerability, this method successfully bypassed the password change requirement.
 
+### Extra Language
+
+**Description**: Retrieve the language file that never made it into production.
+
+**Solution**: To retrieve the missing language on the platform, analyze and compare the available languages with those found online. By using Burp to observe how the language is specified in the request, then inject the code for the missing language into a request. This method allows you to identify and retrieve the unsupported language by understanding and modifying the request structure.
+
 
 
