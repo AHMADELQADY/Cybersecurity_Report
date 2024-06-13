@@ -8,3 +8,9 @@ This report is organized in:
 - The order of the challenges in the report corresponds to the order of the challenges in the demo.
 - The tools I used for writing the report and building the demo are listed at the end of the page.
 
+To be noticed that:
+- The Audio in the demo was added after the edit of the video.
+- The demo was edited and there are scenes that were cut in which there were the trials to solve the challenge.
+- The work in the demo wasn’t done entirely by me since I watched the online tutorials (but I tried and got to some solutions but couldn’t do the technical part).
+
+
