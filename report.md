@@ -77,6 +77,9 @@ QuickTime Player is a multimedia application developed by Apple Inc. It allows u
 
 iMovie is a video editing software application developed by Apple Inc. for macOS and iOS devices. It provides an easy-to-use interface for creating and editing videos, allowing users to import video clips, photos, and audio, apply transitions, effects, and titles, and export finished movies in various formats. iMovie supports 4K video resolution, green screen effects, and has a variety of templates and themes for quick video creation. It is suitable for both beginners and more experienced users looking for a simple yet powerful video editing tool. Used it for the demo editing.
 
+### ChatGPT
+ChatGPT is a conversational AI model developed by OpenAI. It's based on the GPT (Generative Pre-trained Transformer) architecture, which is designed to understand and generate human-like text based on the input it receives. I used it to help in the Markdown language and to adjust some of my writings.
+
 ### Tutorial
 
 [Tutorial](https://www.youtube.com/watch?v=y12QNP2pWN0). Used this tutorial as a guide for the technical part.
