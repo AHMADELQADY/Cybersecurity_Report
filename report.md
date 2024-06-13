@@ -79,7 +79,7 @@ iMovie is a video editing software application developed by Apple Inc. for macOS
 
 ### Tutorial
 
-[https://www.youtube.com/watch?v=y12QNP2pWN0](https://www.youtube.com/watch?v=y12QNP2pWN0). Used this tutorial as a guide for the technical part.
+[Tutorial](https://www.youtube.com/watch?v=y12QNP2pWN0). Used this tutorial as a guide for the technical part.
 
 
 
