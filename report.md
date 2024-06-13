@@ -27,7 +27,6 @@ To be noticed that:
 
 **Solution**: To retrieve the missing language on the platform, analyze and compare the available languages with those found online. By using Burp to observe how the language is specified in the request, then inject the code for the missing language into a request. This method allows you to identify and retrieve the unsupported language by understanding and modifying the request structure.
 
-![Before](images/Language 1.png)
 
 
 ### Leaked Access Logs
